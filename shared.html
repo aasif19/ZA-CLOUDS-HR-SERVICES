@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZA Shared</title>
+    <link rel="icon" href="images/logo/for titlebar.png">
+</head>
+
+<style>
+ body{
+         height: 100vh;
+         width: 100vw;
+         overflow-x: hidden !important ;
+         background: linear-gradient(to right,#01147C,#0000FD);
+            font-family: 'Poppins', sans-serif;
+
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+  .container1{
+    display: flex;
+    padding: 100px;
+    flex-direction: column; 
+    mix-blend-mode: hard-light;
+    color: #fff;
+    position: relative;
+    overflow-x: hidden;
+    height: auto;
+    overflow-y: hidden;
+
+}
+
+.container1 img{
+  width: 50px;
+    height: 50px;
+
+        top: 102px;
+    line-height: 267px;
+    position: absolute;
+}
+
+.container1 p {
+    max-width: 1400px;
+    font-size: 18px;
+    min-width: 300px;
+}
+
+.container1 h3{
+    display: inline-block;
+    margin: 0 auto;
+    padding-bottom: 20px;
+    font-size: 50px;
+    font-family: 'HouschkaRoundedAlt';
+     color:black ;
+ }
+
+
+.container1 h3:hover,.sub-heading:hover{
+    color: #f7ef8a;
+}
+
+.content button{
+    
+    color: #f7ef8a;
+    width: 230px;
+    height: 25px;
+    padding: 30px;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+    outline: none;
+    border: none;
+    line-height: 10px;
+    margin-bottom: 30px;
+    cursor: pointer; 
+    border-radius: 15px;
+    margin-left: 20%;
+    background: linear-gradient(to right,#0f0947,#0A0442,#294050);
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.container3{
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+.content{
+
+display: flex;
+justify-content: center;
+/* align-items: center; */
+flex-direction: column;
+text-align: left;
+margin-top: 30px;
+margin-left: 12%;
+}
+
+.sub-heading{
+    font-size: 28px;
+     font-family: 'HouschkaRoundedAlt';
+     padding-bottom: 5px;
+     display: none;
+}
+.content-value{
+    font-size: 18px;
+     max-width: 1300px;
+    color: white;
+    text-align: left;
+    margin-left: 5px;
+    line-height: 35px;
+    min-width: 300px;
+    overflow-x: hidden;
+    overflow: hidden;
+    padding: 0px 5px;
+  
+}
+
+.content a{
+    text-decoration: none;
+}
+
+.scope{
+ font-size: 30px;
+    font-family: 'HouschkaRoundedAlt';
+    color: black;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+    position: relative;
+    text-align: center;
+}
+
+.container1 h3:hover,.scope:hover{
+    color: #f7ef8a;
+}
+
+.scope::before{
+      position: absolute;
+    content: "";
+    background: url(images/arrows/kindpng_316083.png);
+    background-position: center;
+    background-size: cover;
+    width: 150px;
+    height: 85px;
+    top: -60px;
+    left: -160px;
+}
+
+
+/* ---------------------------
+ -------------------------------------------------------------------------media */
+@media(max-width:632px){
+    .container1 h3 {
+            font-size: 30px;
+    }
+    .container1 img{
+  width: 50px;
+    height: 50px;
+
+        top: 86px;
+    line-height: 267px;
+    position: absolute;
+}
+.content button{
+    margin-left: 0%;
+}
+}
+
+@media(max-width:510px){
+    .container1 p {
+   
+    font-size: 16px;
+    margin-left: -60px;
+
+}
+ .container1 h3 {
+            font-size: 25px;
+    }
+    .scope{
+        font-size: 25px;
+        
+    }
+    .content-value{
+        font-size: 16px;
+    }
+
+    .scope::before{
+    
+  width: 142px;
+    height: 80px;
+    top: -75px;
+    left: -51px;
+}
+}
+@media(max-width:440px){
+        .container1 p {
+     margin-left: -40px;
+     
+}
+.container1 img{
+    display: none;
+}
+}
+@media(max-width:440px){
+    .container1 h3{
+     font-size: 23px;
+     margin-left: -20px;
+    }
+}
+
+@media(max-width:380px){
+    .container1 h3{
+     font-size: 23px;
+     margin-left: -60px;
+    }
+    .container1 p {
+            margin-left: -60px;
+    }
+
+
+}
+
+@media(max-width:380px){
+    .container1 h3{
+     font-size: 21px;
+     margin-left: -80px;
+    }
+    .container1 p {
+            margin-left: -80px;
+    }
+
+}
+</style>
+<body>
+
+
+     <div class="container1" id="container1" >
+        <h3 id="shared">HR Shared Services <img src="images/imgbin_computer-icons-job-retirement-png.png" alt=""> </h3>
+           <p>  HR Shared Services model would be more convenient and suitable for growing companies in "Small, Medium Enterprises" Sectors,
+ as it supports them to implement and strengthen the HR process, effectively.
+ Since variety of activities will be covered in Shared Services, this eliminates the need to hire multiple people for the same task,
+ hence, it reduces the total cost of the company.
+ Also, Companies can get benefit from the expertise from our team who are experts in this domain.
+      </p>
+      </div>
+
+
+      <div class="container3">
+        <div class="content">
+            <h4 class="scope">Scope of work</h4>      
+            <p class="content-value">&#x2022;  Dedicated shared SPOC (Single Point of Contact) shall be assigned (offsite) to ensure service delivery and quality.</p>
+             <p class="content-value">&#x2022;  Support shall be extended in fixation of Employees' Salary Structure as per the statutory requirements and ensure minimum wages.
+</p>
+              <p class="content-value">&#x2022;  The process of issuance of offer letter and appointment letter for all the selected candidates shall be taken care.
+</p>
+              <p class="content-value">&#x2022;  The joining formalities of new recruits shall be taken care and shall be advised for issuance of Employee's ID card.
+</p>
+              <p class="content-value">&#x2022; Ensure to collect the Income tax deceleration form from new joins.
+</p>
+              <p class="content-value">&#x2022;  Various nomination forms shall be collected from new joinees as per the requirement (EPF/ESI/Gratuity Act / Payment of Wages Rules).
+</p>
+              <p class="content-value">&#x2022;  Employees' personal file shall be maintained with proper checklist and will be kept in client premises.
+</p>
+              <p class="content-value">&#x2022;  ESI - IP number and EPF - UAN number will be created / mapped for all the new joins as per the applicability.
+</p>
+              <p class="content-value">&#x2022;  Support in Updation of employee KYC details in EPF/ESI
+</p>
+              <p class="content-value">&#x2022; Probation period confirmation - Employees' probation confirmation letter will be issued after taking confirmation from the Management.
+</p>
+              <p class="content-value">&#x2022; Employee salary will be processed after taking the attendance sheet from the client SPOC (Single Point of Contact).
+</p>
+              <p class="content-value">&#x2022; Leave summary
+</p>
+              <p class="content-value">&#x2022; Emailing of Income Tax Projection to employees
+</p>
+              <p class="content-value">&#x2022; Bank Statement generation / Bank transfer format text File / CSV format / Statement in Excel / Customisation of multiple bank formats
+</p>
+              <p class="content-value">&#x2022; Employee salary slip will be generated and forwarded to respective employees', either through official mail id or personal mail id as per management confirmation.
+</p>
+              <p class="content-value">&#x2022; EPF and ESI challan will be generated after taking the confirmation from the accounts team.
+</p>
+              <p class="content-value">&#x2022; Disciplinary process shall be taken care for Absconding cases - Issuance of 1 st Notice, 2 nd Notice and Termination letter as per the suitability.
+</p>
+              <p class="content-value">&#x2022; Coordination of collecting "No Dues Certificate" for Exiting employees from client SPOC.
+</p>
+              <p class="content-value">&#x2022; Resigned employees Full & Final settlement will be processed, on receipt of "No Dues Certificate".
+</p>
+              <p class="content-value">&#x2022; Issuance of Relieving letter / Experience Letter template shall be shared as per the management confirmation.
+</p>
+              <p class="content-value">&#x2022; Support in Transfer of employee PF account / Withdrawal of PF amount if  required
+</p>
+              <p class="content-value">&#x2022; Assisting Client in handling of PF & ESI inspections / Liaison with the PF & ESI department.
+</p>
+              <p class="content-value">&#x2022; Assisting in preparation and submission of PF & ESI related correspondence.
+</p>
+
+
+         <div class="content">
+          <a href="index.html"> <button class="back">Back to Home</button> </a>
+        </div>
+     </div> 
+
+        </div>
+
+        
+
+    </body>
+</html>
+</html>

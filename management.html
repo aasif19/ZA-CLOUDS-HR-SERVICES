@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ZAManagement</title>
+    <link rel="icon" href="images/logo/for titlebar.png">
+  </head>
+  <body>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,500;0,600;0,700;0,800;0,900;1,700&display=swap");
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        height: 100vh;
+        width: 100vw;
+        overflow-x: hidden !important ;
+        background: linear-gradient(to right, #01147c, #0000fd);
+        font-family: "Poppins", sans-serif;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .container1 {
+        display: flex;
+        padding: 100px;
+
+        flex-direction: column;
+
+        mix-blend-mode: hard-light;
+
+        color: #fff;
+        position: relative;
+        overflow-x: hidden;
+        height: auto;
+        overflow-y: hidden;
+      }
+
+      .container1 img {
+        width: 100px;
+        height: 100px;
+
+        top: 81px;
+        line-height: 267px;
+        position: absolute;
+      }
+
+      .container1 p {
+        max-width: 1400px;
+        font-size: 18px;
+      }
+
+      .container1 h3 {
+        display: inline-block;
+        margin: 0 auto;
+        padding-bottom: 20px;
+        font-size: 50px;
+        font-family: "HouschkaRoundedAlt";
+        color: black;
+      }
+
+      .container1 h3:hover,
+      .sub-heading:hover {
+        color: #f7ef8a;
+      }
+      .scope {
+        font-size: 30px;
+        font-family: "HouschkaRoundedAlt";
+        color: black;
+        margin-bottom: 10px;
+        text-transform: capitalize;
+      }
+
+      .glass {
+        background: white;
+        width: 600px;
+        height: 200px;
+        background: linear-gradient(
+          to right bottom,
+          rgba(255, 255, 255, 0.1),
+          rgba(255, 255, 255, 0.2),
+          rgba(255, 255, 255, 0.3),
+          rgba(255, 255, 255, 0.1)
+        );
+        border-radius: 1rem;
+        display: flex;
+
+        position: relative;
+      }
+
+      .glass ul,
+      .container2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        list-style: none;
+        text-align: center;
+        vertical-align: middle;
+        color: #f7ef8a;
+        font-weight: 800;
+        line-height: 28px;
+      }
+      .glass ul {
+        margin-left: 65px;
+        font-size: 18px;
+        margin-top: 10px;
+      }
+
+      .container3 {
+        margin-top: -50px;
+        margin-bottom: 20px;
+      }
+
+      .glass::after {
+        content: " ";
+        position: absolute;
+        top: 32px;
+        left: -139px;
+        background-image: url(images/arrows/—Pngtree—paper\ plane\ flying_8826334.png);
+        width: 300px;
+        height: 300px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      .content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: left;
+        margin-top: 30px;
+      }
+
+      .sub-heading {
+        font-size: 21px;
+        font-family: "HouschkaRoundedAlt";
+        padding-bottom: 5px;
+      }
+      .content-value {
+        font-size: 18px;
+        max-width: 1000px;
+        color: white;
+        text-align: left;
+        margin-left: 5px;
+      }
+
+      .content a {
+        text-decoration: none;
+      }
+
+      .content button {
+        color: #f7ef8a;
+        width: 230px;
+        height: 25px;
+        padding: 30px;
+        font-size: 20px;
+        font-weight: 500;
+        text-align: center;
+        outline: none;
+        border: none;
+        line-height: 10px;
+        margin-bottom: 30px;
+        cursor: pointer;
+        border-radius: 15px;
+        background: linear-gradient(to right, #0f0947, #0a0442, #294050);
+        box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+          rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+          rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset,
+          rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
+          rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px,
+          rgba(0, 0, 0, 0.09) 0px 32px 16px;
+      }
+
+    
+      /* ------------------------------------media ------------------------ */
+      @media (max-width: 1047px) {
+        .content-value {
+          font-size: 17px;
+          max-width: 750px;
+          overflow-x: hidden;
+        }
+      }
+
+      @media (max-width: 970px) {
+        .content-value {
+          max-width: 650px;
+        }
+        .container1 h3 {
+          font-size: 40px;
+        }
+      }
+
+      @media (max-width: 830px) {
+        .glass::after {
+          top: 80px;
+          left: -100px;
+          width: 300px;
+          height: 300px;
+        }
+      }
+
+      @media (max-width: 750px) {
+        .container1 h3 {
+          font-size: 30px;
+        }
+        .content-value {
+          max-width: 500px;
+        }
+        .container1 p {
+          font-size: 16px;
+          font-weight: 400;
+        }
+        .scope {
+          font-size: 25px;
+        }
+        .glass ul {
+          font-weight: 600;
+          font-size: 16px;
+          margin-left: 40px;
+        }
+        .glass {
+          width: 500px;
+          height: 250px;
+        }
+        .glass::after {
+          top: 144px;
+          left: -56px;
+          width: 200px;
+          height: 200px;
+        }
+        .container1 img {
+          width: 80px;
+          height: 80px;
+          top: 70px;
+          line-height: 267px;
+          position: absolute;
+        }
+      }
+      @media (max-width: 610px) {
+        .container1 h3 {
+          font-size: 25px;
+        }
+        .scope {
+          font-size: 22px;
+        }
+        .glass::after {
+          top: 144px;
+          left: 0px;
+          width: 200px;
+          height: 200px;
+        }
+      }
+
+      @media (max-width: 556px) {
+        .container1 h3 {
+          font-size: 22px;
+        }
+        .container1 p,
+        .content-value {
+          font-size: 15px;
+          font-weight: 400;
+        }
+        .scope {
+          font-size: 20px;
+        }
+        .content-value {
+          max-width: 300px;
+        }
+        .glass {
+          width: 280px;
+          height: 280px;
+        }
+        .glass ul {
+          margin-right: 30px;
+          font-size: 15.5px;
+        }
+        .glass::after {
+          top: 144px;
+          left: -100px;
+          width: 180px;
+          height: 180px;
+        }
+      }
+      @media (max-width: 450px) {
+        .sub-heading {
+          text-align: center;
+        }
+        .content button {
+          width: 190px;
+        }
+        .glass::after {
+          top: 200px;
+          left: -50px;
+          width: 150px;
+          height: 150px;
+        }
+        .container1 img {
+          display: none;
+        }
+
+        .container1 h3 {
+          margin-left: -20px;
+          font-size: 18px;
+        }
+      }
+
+      @media (max-width: 425px) {
+        .container1 h3 {
+          margin-left: -26px;
+          font-size: 16px;
+        }
+      }
+      @media (max-width: 410px) {
+        .container1 h3 {
+          margin-left: -80px;
+          font-size: 17px;
+        }
+      }
+      ::-webkit-scrollbar {
+        display: none;
+      }
+    </style>
+
+    <div class="container1" id="container1">
+      <h3 id="management">
+        Management Consultancy
+        <img
+          src="images/—Pngtree—vector user management icon_4102536.png"
+          alt=""
+        />
+      </h3>
+      <p>
+        Keeping in mind with rapid growth in the competitive markets, and that
+        too in this vital and verticalized department, one needs expertise
+        support in way of trusted hands, to cater to all the compliance needs
+        and health checks, so as to focus on the organization’s performance
+        excellence and quality management. In short, one needs to experience
+        360* total peace of mind in establishing an organization’s unit(s) in
+        100% compliance. <br />
+        <br />
+        Our team will Management Consultancy and Training with reliability,
+        professionalism, and excellence. We focus on your desired results and
+        strive to exceed your expectations. We will always communicate honestly
+        and respectfully and will protect your confidential information. When we
+        work together, we can identify issues and formulate recommendations
+        hand-in-hand to best assure the attainment of your objectives. We always
+        appreciate immediate feedback so we can be sure that our services
+        continue to meet your expectations and support your organizational
+        goals. Whether your organization is small or large, our consulting
+        services are specifically tailored to your unique needs.
+      </p>
+    </div>
+
+    <!-- <div class="container2">
+      <h4 class="scope">Scope of work</h4>
+      <div class="glass">
+        <ul>
+          <li>Professional Management Systems and Procedures</li>
+          <li>Learning and Development</li>
+          <li>Strategic Roadmap</li>
+          <li>Human Resource</li>
+          <li>Marketing</li>
+          <li>Finance</li>
+          <li>Quality</li>
+        </ul>
+      </div>
+    </div> -->
+
+    <div class="container3">
+      <div class="content">
+        <h4 class="sub-heading">
+          Professional Management Systems and Procedures
+        </h4>
+        <p class="content-value">
+          Restructuring; Objectives; Customer Friendly Systems and Procedures
+        </p>
+      </div>
+
+      <div class="content">
+        <h4 class="sub-heading">Learning and Development</h4>
+        <p class="content-value">
+          Physician Management Training; Managerial Skills; Supervisory Skills;
+          Customer Service; Communication and Interpersonal Relationship; Soft
+          Skills
+        </p>
+      </div>
+
+      <div class="content">
+        <h4 class="sub-heading">Strategic Roadmap</h4>
+        <p class="content-value">
+          Sustainable Growth and Development; Strategic Planning in line with
+          Vision; Long-term Plan; Comprehensive Goals; Annual Targets; Action
+          Plans
+        </p>
+      </div>
+
+      <div class="content">
+        <h4 class="sub-heading">Human Resource</h4>
+        <p class="content-value">
+          Sense of Belongingness; Code of Conduct; Job Satisfaction; HR Policy;
+          HR Audit; Statutory Compliance; Payroll Management; Job Descriptions;
+          Talent Acquisition; Productivity Analysis; Manpower Planning; Small
+          Group Activities; Information System; Benefits & Welfare Measures.
+        </p>
+      </div>
+
+      <div class="content">
+        <h4 class="sub-heading">Marketing</h4>
+        <p class="content-value">
+          Branding; Market Analysis; Community Opinion Survey; Customer
+          Satisfaction Survey; Strengthening Referral Networks; Community
+          Outreach Programmes; Advertisement; Publicity; Public Relations;
+          Social Marketing.
+        </p>
+      </div>
+
+      <div class="content">
+        <h4 class="sub-heading">Finance</h4>
+        <p class="content-value">
+          Profitability; Financial Sustainability; Revenue Generation; Cost
+          Containment; Costing; Cost Centres; Budgeting; Fundraising;
+          Differential Pricing
+        </p>
+      </div>
+
+      <div class="content">
+        <h4 class="sub-heading">Quality</h4>
+        <p class="content-value">
+          Quality Culture; Quality Mission; Quality Audits; Performance
+          Indicators; Outcome Measurement; Feedback; Customer Satisfaction;
+          Rights & Responsibilities; Customer Service
+        </p>
+      </div>
+
+      <div class="content">
+        <a href="index.html"> <button class="back">Back to Home</button> </a>
+      </div>
+    </div>
+  </body>
+</html>

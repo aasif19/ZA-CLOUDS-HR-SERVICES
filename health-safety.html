@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ZA Health and Safety Envirob=nmental Support & Audit</title>
+    <link rel="icon" href="images/logo/for titlebar.png">
+  </head>
+  <body>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,500;0,600;0,700;0,800;0,900;1,700&display=swap");
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        height: 100vh;
+        width: 100vw;
+        overflow-x: hidden !important ;
+        background: linear-gradient(to right, #01147c, #0000fd);
+        font-family: "Poppins", sans-serif;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .container1,
+      .container3 {
+        display: flex;
+        padding: 100px;
+
+        flex-direction: column;
+
+        mix-blend-mode: hard-light;
+
+        color: #fff;
+        position: relative;
+        overflow-x: hidden;
+        height: auto;
+        overflow-y: hidden;
+      }
+
+      .container1 img {
+        height: 80px;
+
+        width: 80px;
+        top: 65px;
+        line-height: 267px;
+        position: absolute;
+        padding-left: 10px;
+      }
+
+      .container1 p {
+        max-width: 1400px;
+        font-size: 16px;
+        font-weight: 400;
+      }
+
+      .container1 h3,
+      .container3 h4 {
+        display: inline-block;
+        margin: 0 auto;
+        padding-bottom: 20px;
+        font-size: 40px;
+        font-family: "HouschkaRoundedAlt";
+        color: black;
+      }
+
+      .container1 h3:hover,
+      .container3 h4:hover {
+        color: #f7ef8a;
+      }
+      .container3 h4 {
+        font-size: 30px;
+        font-family: "HouschkaRoundedAlt";
+        color: black;
+        margin-bottom: 10px;
+        text-transform: capitalize;
+      }
+
+      .glass {
+        background: white;
+        width: 800px;
+        height: 300px;
+        background: linear-gradient(
+          to right bottom,
+          rgba(255, 255, 255, 0.1),
+          rgba(255, 255, 255, 0.2),
+          rgba(255, 255, 255, 0.3),
+          rgba(255, 255, 255, 0.1)
+        );
+        border-radius: 1rem;
+        display: flex;
+
+        position: relative;
+      }
+
+      .glass ul,
+      .container2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        list-style: none;
+        text-align: center;
+        vertical-align: middle;
+        color: #f7ef8a;
+        font-weight: 800;
+        line-height: 28px;
+      }
+      .glass ul {
+        margin-left: 65px;
+        font-size: 18px;
+        margin-top: 10px;
+      }
+
+      .container3 {
+        margin-top: -25px;
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .glass::after {
+        content: " ";
+        position: absolute;
+        top: 32px;
+        left: -139px;
+        background-image: url(images/arrows/—Pngtree—paper\ plane\ flying_8826334.png);
+        width: 300px;
+        height: 300px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .content button {
+        color: #f7ef8a !important;
+        width: 230px;
+        height: 25px;
+        padding: 30px;
+        font-size: 20px;
+        font-weight: 500;
+        text-align: center;
+        outline: none;
+        border: none;
+        line-height: 10px;
+        margin-bottom: 30px;
+        margin-top: 30px;
+        cursor: pointer;
+        border-radius: 15px;
+        background: linear-gradient(to right, #0f0947, #0a0442, #294050);
+        box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+          rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+          rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset,
+          rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
+          rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px,
+          rgba(0, 0, 0, 0.09) 0px 32px 16px;
+      }
+
+      /* ---------------------------------------------------------------------------------media */
+
+      @media (max-width: 1110px) {
+        .container1 h3 {
+          font-size: 30px;
+        }
+
+        .container1 img {
+          width: 70px;
+          height: 70px;
+        }
+      }
+
+      @media (max-width: 887px) {
+        .container1 img {
+          display: none;
+        }
+        .glass::after {
+          top: 183px;
+          left: 30px;
+          width: 250px;
+          height: 250px;
+        }
+      }
+
+      @media (max-width: 800px) {
+        .glass {
+          width: 650px;
+          height: 300px;
+        }
+      }
+
+      @media (max-width: 670px) {
+        .glass {
+          width: 500px;
+          height: 350px;
+          position: relative;
+        }
+        .glass ul {
+          transform: translate(-50%, -50%);
+          top: 50%;
+
+          position: absolute;
+          margin-left: 260px;
+          width: 100%;
+        }
+        .glass::after {
+          top: -133px;
+          left: 30px;
+          width: 200px;
+          height: 200px;
+        }
+      }
+
+      @media (max-width: 518px) {
+        .glass {
+          width: 400px;
+          height: 350px;
+          position: relative;
+        }
+        .glass ul {
+          transform: translate(-50%, -50%);
+          top: 50%;
+
+          position: absolute;
+          margin-left: 200px;
+          width: 100%;
+        }
+      }
+
+      @media (max-width: 406px) {
+        .glass {
+          width: 350px;
+          height: 400px;
+          position: relative;
+        }
+        .glass ul {
+          transform: translate(-50%, -50%);
+          top: 50%;
+
+          position: absolute;
+          margin-left: 180px;
+          width: 100%;
+        }
+      }
+      @media (max-width: 360px) {
+        .glass {
+          width: 300px;
+          height: 400px;
+          position: relative;
+        }
+        .glass ul {
+          transform: translate(-50%, -50%);
+          top: 50%;
+
+          position: absolute;
+          margin-left: 150px;
+          width: 100%;
+        }
+
+        .container3 h4 {
+          font-size: 27px;
+        }
+      }
+    </style>
+
+    <div class="container1" id="container1">
+      <h3 id="health-safety">
+        Health and Safety, Environmental Support & Audit
+        <img src="images/header icons/medical.png" alt="" />
+      </h3>
+      <p>
+        EH&S audit is a tool that people can utilize to evaluate different
+        features in their neighbourhoods to achieve process safety management.
+        The basic idea of conducting EH&S audit is to help the management to
+        look at a space that feels unsafe and determine why it feels that way to
+        look at where the site is, what is beside it, how it is designed and
+        what happens inside the system. <br />
+        <br />
+        our team will carry out an independent third party Rapid EH&S audits,
+        covering all plants and facilities in the manufacturing factory
+        premises, with a team of dedicated EH&S consulting professionals whose
+        practice is the structure and implementation of workplace EH&S Audit and
+        Regulatory compliance. Every member of our staff not only holds highly
+        technical degrees but they have practical “in-field safety” experience.
+        The audit observations and recommendations will be based on the site
+        inspection & discussion with the plant personnel concerned and
+        verification of documents.
+        <br />
+        <br />
+        The audit will be conducted as per guidelines are given in the checklist
+        of Bureau of Indian Standard - IS 14489-1998 "Code of Practice on
+        Occupational Safety and Health Audit" and also will be covered all EH&S
+        related regulations that applicable to the facility. The following Audit
+        protocols and guidelines will be used as a reference during the audit.
+      </p>
+    </div>
+
+    <div class="container2">
+      <div class="glass">
+        <ul>
+          <li>
+            Hazardous Waste Management Rules-2016 & Bio-Medical Waste Rules-
+            2016
+          </li>
+          <li>Consent Orders & Hazardous Waste authorization</li>
+          <li>International Labour Organization</li>
+          <li>FM Global Fire Safety Checklist</li>
+          <li>Indian Electricity Rules-1956</li>
+          <li>The Factories Act, 1948</li>
+          <li>Facility work permits</li>
+          <li>Air Act & Water Act</li>
+          <li>OSHA Guidelines</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container3">
+      <h4 class="scope">Green Audit</h4>
+      <p>&#x2022;
+        Educational institutions nowadays are becoming more sensitive to
+        environmental factors and more concepts are being introduced to make
+        them eco-friendly. To preserve the environment within the campus,
+        various viewpoints are applied by the several educational institutes to
+        solve their environmental problems such as promotion of the energy
+        savings, recycle of waste, water reduction, water harvesting etc. The
+        activities pursued by the university can also create a variety of
+        adverse environmental impacts. Environmental auditing is a process
+        whereby an organization's environmental performance is tested against
+        its environmental policies and objectives. Green audit is defined as an
+        official examination of the effects a University has on the environment.
+        As a part of such practice, internal audit (Green Audit) is conducted to
+        evaluate the actual scenario at the campus.
+
+        <br />
+        <br />
+       &#x2022; The Green audit is a requirement of NACC assessment to the Colleges and
+        Universities and it's practically involves energy conservation, use of
+        renewable sources, rain water harvesting, efforts of carbon neutrality,
+        planting of trees, hazardous waste management and E-waste management.
+
+        <br />
+        <br />
+       &#x2022; Green audit can be a useful tool for a University to determine how and
+        where they are using the most energy or water or resources; the
+        University can then consider how to implement changes and make savings.
+        It can also be used to determine the type and volume of waste, which can
+        be used for a recycling project or to improve waste minimization plan.
+        Green auditing and the implementation of mitigation measures is a
+        win-win situation for all the University, the learners and the planet.
+        It can also create health consciousness and promote environmental
+        awareness, values and ethics. It provides staff and students better
+        understanding of Green impact on campus. Green auditing promotes
+        financial savings through reduction of resource use. It gives an
+        opportunity for the development of ownership, personal and social
+        responsibility for the students and teachers.
+        <br />
+        <br />
+       &#x2022; The audit process will get involve Initial Data Collection, Site walk
+        through and verification of policies, activities, documents and records
+        pertaining to Green Audit.
+      </p>
+      <div class="content">
+        <a href="index.html"> <button class="back">Back to Home</button> </a>
+      </div>
+    </div>
+  </body>
+</html>

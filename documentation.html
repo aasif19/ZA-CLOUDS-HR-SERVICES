@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ZA Documentation</title>
+    <link rel="icon" href="images/logo/for titlebar.png">
+  </head>
+  <body>
+    <style>
+      html {
+        overflow-x: hidden;
+      }
+      body {
+        height: 100vh;
+        width: 100vw;
+
+        background: linear-gradient(to right, #01147c, #0000fd);
+        font-family: "Poppins", sans-serif;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .container1 {
+        display: flex;
+        padding: 100px;
+        flex-direction: column;
+        mix-blend-mode: hard-light;
+        color: #fff;
+        position: relative;
+
+        height: auto;
+      }
+      .container1 h3 {
+        display: inline-block;
+        margin: 0 auto;
+        padding-bottom: 20px;
+        font-size: 50px;
+        font-family: "HouschkaRoundedAlt";
+        color: black;
+      }
+
+      .container1 h3:hover {
+        color: #f7ef8a;
+      }
+
+      .container1 img {
+        width: 50px;
+        height: 50px;
+
+        top: 102px;
+        line-height: 267px;
+        position: absolute;
+      }
+
+      .content-value {
+        font-size: 18px;
+        max-width: 1300px;
+        text-align: center;
+        min-width: 250px;
+        position: relative;
+      }
+
+      .content-value::after {
+        content: "";
+        position: absolute;
+        background: url(images/arrows/—Pngtree—paper\ plane\ flying_8826334.png);
+        top: 100px;
+        left: 100px;
+        width: 261px;
+        height: 231px;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+      .content {
+        position: relative;
+      }
+      .content button {
+        color: #f7ef8a;
+        position: absolute;
+
+        width: 230px;
+        height: 35px;
+        padding: 30px;
+        font-size: 20px;
+        font-weight: 500;
+        text-align: center;
+        outline: none;
+        border: none;
+        line-height: 10px;
+        margin-left: 150px;
+        margin-top: 150px;
+        margin-bottom: 20px;
+
+        cursor: pointer;
+
+        border-radius: 15px;
+        background: linear-gradient(to right, #0f0947, #0a0442, #294050);
+        box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+          rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+          rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset,
+          rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
+          rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px,
+          rgba(0, 0, 0, 0.09) 0px 32px 16px;
+      }
+
+      @media(max-width:780px){
+        .container1 img{
+            display: none;
+        }
+      }
+
+      @media (max-width: 475px) {
+        .content-value::after {
+          top: 180px;
+          left: 0px;
+          width: 150px;
+          height: 150px;
+        }
+        .content button {
+          color: #f7ef8a;
+          position: absolute;
+
+          width: 190px;
+          height: 35px;
+          padding: 30px;
+          font-size: 20px;
+          font-weight: 500;
+          text-align: center;
+          outline: none;
+          border: none;
+          line-height: 10px;
+          margin-left: 100px;
+          margin-top: 80px;
+          margin-bottom: 10px;
+
+          cursor: pointer;
+
+          border-radius: 15px;
+          background: linear-gradient(to right, #0f0947, #0a0442, #294050);
+          box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+            rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+            rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset,
+            rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
+            rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px,
+            rgba(0, 0, 0, 0.09) 0px 32px 16px;
+        }
+        .container1 h3{
+            font-size: 30px;
+        }
+      }
+
+      @media (max-width: 420px) {
+        .container1 {
+          margin-left: -30px;
+        }
+      }
+      @media (max-width: 360px) {
+        .container1 {
+          margin-left: -40px;
+        }
+      }
+    </style>
+    <div class="container1">
+      <h3 id="documentation">
+        Documentation & Training<img src="images/header icons/pngwing.com.png" alt="" />
+      </h3>
+      <div class="content">
+        <p class="content-value">
+           We provide standard documentation setup and training on client place
+          as per the requirement and customised sop (Standard operating
+          procedure),we prepare personalized check list and formats as per
+          client need.
+        </p>
+      </div>
+    </div>
+    <div class="content">
+      <a href="index.html"> <button class="back">Back to Home</button> </a>
+    </div>
+  </body>
+</html>
